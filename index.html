@@ -39,6 +39,26 @@
           title="Enter a numeric Zip Code."
         />
       </label>
+      <label for="password">
+        Password:
+        <input
+          required
+          type="password"
+          pattern="^[a-zA-Z0-9@#$%^&*()_+=\-\[\]{};':,.<>?\|]{8,64}$"
+          minlength="8"
+        />
+      </label>
+      <label for="password-confirm">
+        Repeat password:
+        <input
+          required
+          type="password"
+          pattern="^[a-zA-Z0-9@#$%^&*()_+=\-\[\]{};':,.<>?\|]{8,64}$"
+          minlength="8"
+          maxlength="64"
+        />
+      </label>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
