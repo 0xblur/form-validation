@@ -18,6 +18,27 @@
           placeholder="your@email.com"
         />
       </label>
+      <label for="country">
+        Country:
+        <input
+          required
+          type="text"
+          id="country"
+          minlength="4"
+          pattern="[a-zA-Z]*"
+          title="Enter a valid country"
+        />
+      </label>
+      <label for="zip-code">
+        Zip Code:
+        <input
+          required
+          type="text"
+          inputmode="numeric"
+          pattern="\d*"
+          title="Enter a numeric Zip Code."
+        />
+      </label>
     </form>
   </body>
 </html>
