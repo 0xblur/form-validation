@@ -13,9 +13,11 @@
         >E-mail:
         <input
           required
+          id="email"
           type="email"
           name="email"
-          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
+          <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,5}" -->
+          maxlength="64"
           title="Enter a valid email address."
           placeholder="your@email.com"
         />
@@ -31,29 +33,32 @@
           title="Enter a valid country"
         />
       </label>
-      <label for="zip-code">
+      <label for="zip">
         Zip Code:
         <input
           required
           type="text"
+          id="zip"
           inputmode="numeric"
           pattern="\d*"
           title="Enter a numeric Zip Code."
         />
       </label>
-      <label for="password">
+      <label for="pass">
         Password:
         <input
           required
+          id="pass"
           type="password"
           pattern="^[a-zA-Z0-9@#$%^&*()_+=\-\[\]{};':,.<>?\|]{8,64}$"
           minlength="8"
         />
       </label>
-      <label for="password-confirm">
+      <label for="pass-confirm">
         Repeat password:
         <input
           required
+          id="pass-confirm"
           type="password"
           pattern="^[a-zA-Z0-9@#$%^&*()_+=\-\[\]{};':,.<>?\|]{8,64}$"
           minlength="8"
@@ -62,5 +67,6 @@
       </label>
       <button type="submit">Submit</button>
     </form>
+    <script src="main.js"></script>
   </body>
 </html>
